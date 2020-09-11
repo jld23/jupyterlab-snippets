@@ -12,7 +12,7 @@ import setuptools
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 # The name of the project
-name="jupyterlab-snippets"
+name="jupyterlab-sas-snippets"
 
 # Ensure a valid python version
 ensure_python(">=3.6")
@@ -57,13 +57,14 @@ setup_args = dict(
     version=version,
     url="https://github.com/QuantStack/jupyterlab-snippets",
     author="QuantStack",
-    description="Code Snippets Extension for JupyterLab",
+    description="SAS Code Snippets Extension for JupyterLab",
     long_description=long_description,
     long_description_content_type="text/markdown",
     cmdclass=cmdclass,
     packages=setuptools.find_packages(),
     install_requires=[
         "jupyterlab",
+        "sas_kernel"
     ],
     zip_safe=False,
     include_package_data=True,
@@ -77,6 +78,7 @@ setup_args = dict(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: SAS :: 9.4+",
         "Framework :: Jupyter",
     ],
 )

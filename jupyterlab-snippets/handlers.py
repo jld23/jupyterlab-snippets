@@ -1,7 +1,5 @@
 import json
-
 import tornado
-
 from notebook.base.handlers import APIHandler
 from notebook.utils import url_path_join
 
@@ -25,7 +23,7 @@ class GetSnippet(APIHandler):
     @tornado.gen.coroutine
     def post(self):
         data = self.get_json_body()
-        snippet = data['snippet']
+        snippet = data['sas-snippet']
         content = self.loader.get_snippet_content(snippet)
         self.finish(json.dumps({
             "content": content
@@ -35,7 +33,7 @@ class GetSnippet(APIHandler):
 def setup_handlers(web_app, loader):
     base_url = web_app.settings['base_url']
     handlers = [
-        (url_path_join(base_url, 'snippets', 'list'), ListSnippets, {'loader': loader}),
-        (url_path_join(base_url, 'snippets', 'get'), GetSnippet, {'loader': loader})
+        (url_path_join(base_url, 'sas-snippets', 'list'), ListSnippets, {'loader': loader}),
+        (url_path_join(base_url, 'sas-snippets', 'get'), GetSnippet, {'loader': loader})
     ]
     web_app.add_handlers('.*$', handlers)

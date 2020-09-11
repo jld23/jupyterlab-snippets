@@ -1,7 +1,7 @@
-name: jupyterlan-snippets
+name: jupyterlan-sas-snippets
 channels:
   - conda-forge
 dependencies:
-  - jupyterlab-snippets=0.3.2
+  - jupyterlab-sas-snippets
   - jupyterlab >=2
   - nodejs
