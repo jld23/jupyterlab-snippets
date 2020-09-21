@@ -1,6 +1,6 @@
 {
-  "name": "jupyterlab-snippets",
-  "version": "0.3.2",
+  "name": "jupyterlab-sas-snippets",
+  "version": "0.1.0",
   "description": "Snippets Extension for JupyterLab",
   "keywords": [
     "jupyter",
@@ -61,7 +61,7 @@
             "pip"
           ],
           "base": {
-            "name": "jupyterlab-snippets"
+            "name": "jupyterlab-sas-snippets"
           }
         }
       },
