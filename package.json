@@ -1,18 +1,18 @@
 {
-  "name": "jupyterlab-snippets",
-  "version": "0.3.2",
-  "description": "Snippets Extension for JupyterLab",
+  "name": "jupyterlab-sas-snippets",
+  "version": "0.1.0",
+  "description": "Snippets Extension for SAS Code in JupyterLab",
   "keywords": [
     "jupyter",
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/QuantStack/jupyterlab-snippets",
+  "homepage": "https://github.com/jld23/jupyterlab-snippets",
   "bugs": {
-    "url": "https://github.com/QuantStack/jupyterlab-snippets/issues"
+    "url": "https://github.com/jld23/jupyterlab-snippets/issues"
   },
   "license": "BSD-3-Clause",
-  "author": "QuantStack",
+  "author": "Jared Dean",
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
@@ -22,16 +22,16 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/QuantStack/jupyterlab-snippets.git"
+    "url": "https://github.com/jld23/jupyterlab-snippets.git"
   },
   "scripts": {
     "build": "jlpm run build:lib",
-    "build:labextension": "cd jupyterlab-snippets && rimraf labextension && mkdirp labextension && cd labextension && npm pack ../..",
+    "build:labextension": "cd jupyterlab-sas-snippets && rimraf labextension && mkdirp labextension && cd labextension && npm pack ../..",
     "build:lib": "tsc",
     "build:all": "jlpm run build:labextension",
     "clean": "jlpm run clean:lib",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
-    "clean:labextension": "rimraf jupyterlab-snippets/labextension",
+    "clean:labextension": "rimraf jupyterlab-sas-snippets/labextension",
     "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
     "prepare": "jlpm run clean && jlpm run build",
     "watch": "tsc -w"
@@ -39,9 +39,9 @@
   "dependencies": {
     "@jupyterlab/application": "^2.0.2",
     "@jupyterlab/apputils": "^2.0.2",
-    "@jupyterlab/coreutils": "^4.0.2",
-    "@jupyterlab/mainmenu": "^2.0.2",
-    "@jupyterlab/notebook": "^2.0.2",
+    "@jupyterlab/coreutils": "^4.2.4",
+    "@jupyterlab/mainmenu": "^2.2.3",
+    "@jupyterlab/notebook": "^2.2.6",
     "@jupyterlab/services": "^5.0.2",
     "@lumino/commands": "^1.9.2",
     "@lumino/widgets": "^1.10.0"
@@ -56,15 +56,15 @@
   ],
   "jupyterlab": {
     "discovery": {
-        "server": {
-          "managers": [
-            "pip"
-          ],
-          "base": {
-            "name": "jupyterlab-snippets"
-          }
+      "server": {
+        "managers": [
+          "pip"
+        ],
+        "base": {
+          "name": "jupyterlab-sas-snippets"
         }
-      },
+      }
+    },
     "extension": true
   }
 }

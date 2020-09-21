@@ -1,5 +1,5 @@
 """
-Setup Module to setup Python Handlers for the jupyterlab-snippets extension.
+Setup Module to setup Python Handlers for the jupyterlab-sas-snippets extension.
 """
 import os
 
@@ -36,7 +36,7 @@ package_data_spec = {
 data_files_spec = [
     ("share/jupyter/lab/extensions", lab_path, "*.tgz"),
     ("etc/jupyter/jupyter_notebook_config.d",
-     "jupyter-config", "jupyterlab-snippets.json"),
+     "jupyter-config", "jupyterlab-sas-snippets.json"),
 ]
 
 cmdclass = create_cmdclass("jsdeps",
@@ -55,8 +55,8 @@ with open("README.md", "r") as fh:
 setup_args = dict(
     name=name,
     version=version,
-    url="https://github.com/QuantStack/jupyterlab-snippets",
-    author="QuantStack",
+    url="https://github.com/jld23/jupyterlab-snippets",
+    author="Jared Dean",
     description="SAS Code Snippets Extension for JupyterLab",
     long_description=long_description,
     long_description_content_type="text/markdown",

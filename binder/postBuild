@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# install snippets
-
-#cd jupyter-boilerplate-converter
-#git clone git://github.com/moble/jupyter_boilerplate
-#npm install
-
 export SNIPPET_DIR=`python -c "from jupyter_core.paths import jupyter_path;print(jupyter_path('snippets')[0])"`
 
 mkdir -p $SNIPPET_DIR

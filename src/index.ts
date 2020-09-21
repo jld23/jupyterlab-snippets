@@ -19,13 +19,18 @@ import {
   folderIcon,
 } from '@jupyterlab/ui-components';
 
+// TODO:
+// https://www.npmjs.com/package/@jupyterlab/ui-components
+// Create sasIcon for command list
+import {sasIcon} from './svg.d.ts';
+
 import { listSnippets, Snippet, fetchSnippet } from "./sas-snippets";
 
 /**
  * The command IDs used by the snippets plugin.
  */
 namespace CommandIDs {
-  export const open = "snippets:open";
+  export const open = "sas-snippets:open";
 }
 
 /**
@@ -77,7 +82,7 @@ function createMenu(commands: CommandRegistry , tree: Tree, path: string[] = [])
 }
 
 /**
- * Initialization data for the jupyterlab-snippets extension.
+ * Initialization data for the jupyterlab-sas-snippets extension.
  */
 const extension: JupyterFrontEndPlugin<void> = {
   id: "jupyterlab-sas-snippets",
@@ -102,7 +107,7 @@ const extension: JupyterFrontEndPlugin<void> = {
       icon: args => {
         const ext = PathExt.extname(args['label'] as string);
         if (ext === '.sas') {
-          return pythonIcon;
+          return sasIcon;
         }
         if (ext === '.py') {
           return pythonIcon;
