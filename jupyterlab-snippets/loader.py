@@ -9,7 +9,7 @@ import tornado
 
 class SnippetsLoader:
     def __init__(self):
-        self.snippet_paths = jupyter_path("snippets")
+        self.snippet_paths = jupyter_path("sas-snippets")
 
     def collect_snippets(self):
         snippets = []

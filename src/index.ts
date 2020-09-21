@@ -130,7 +130,7 @@ const extension: JupyterFrontEndPlugin<void> = {
     if (menu) {
       const list = await listSnippets();
       const snippetsMenu = createMenu(commands, toTree(list));
-      snippetsMenu.title.label = 'Snippets';
+      snippetsMenu.title.label = 'SAS Snippets';
       menu.addMenu(snippetsMenu);
     }
   }
