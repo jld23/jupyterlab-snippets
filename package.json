@@ -1,18 +1,19 @@
 {
   "name": "jupyterlab-sas-snippets",
   "version": "0.1.0",
-  "description": "Snippets Extension for JupyterLab",
+  "description": "SAS Snippets Extension for JupyterLab",
   "keywords": [
     "jupyter",
     "jupyterlab",
+    "sas_kernel",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/QuantStack/jupyterlab-snippets",
+  "homepage": "https://github.com/jld23/jupyterlab-snippets",
   "bugs": {
-    "url": "https://github.com/QuantStack/jupyterlab-snippets/issues"
+    "url": "https://github.com/jld23/jupyterlab-snippets/issues"
   },
   "license": "BSD-3-Clause",
-  "author": "QuantStack",
+  "author": "Jared Dean",
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
@@ -22,7 +23,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/QuantStack/jupyterlab-snippets.git"
+    "url": "https://github.com/jld23/jupyterlab-snippets.git"
   },
   "scripts": {
     "build": "jlpm run build:lib",

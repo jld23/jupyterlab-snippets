@@ -19,7 +19,10 @@ import {
   folderIcon,
 } from '@jupyterlab/ui-components';
 
+// TODO: Import the SAS logo and use it
+
 import { listSnippets, Snippet, fetchSnippet } from "./sas-snippets";
+import { IThemeManager } from "@jupyterlab/apputils";
 
 /**
  * The command IDs used by the snippets plugin.

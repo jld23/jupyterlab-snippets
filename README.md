@@ -1,14 +1,14 @@
 # jupyterlab-snippets
 
-![Github Actions Status](https://github.com/QuantStack/jupyterlab-snippets/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/pypi/v/jupyterlab-snippets.svg)](https://pypi.python.org/project/jupyterlab-snippets)
+![Github Actions Status](https://github.com/jld23/jupyterlab-snippets/workflows/Build/badge.svg)
+[![Version](https://img.shields.io/pypi/v/jupyterlab-sas-snippets.svg)](https://pypi.python.org/project/jupyterlab-sas-snippets)
 [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-snippets.svg)](https://anaconda.org/conda-forge/jupyterlab-snippets)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/QuantStack/jupyterlab-snippets/stable?urlpath=lab/tree/binder/notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jld23/jupyterlab-snippets/stable?urlpath=lab/tree/binder/notebook.ipynb)
 
 Snippets Extension for JupyterLab.
 
-This extension is composed of a Python package named `jupyterlab-snippets`
-for the server extension and a NPM package named `jupyterlab-snippets`
+This extension is composed of a Python package named `jupyterlab-sas-snippets`
+for the server extension and a NPM package named `jupyterlab-sas-snippets`
 for the frontend extension.
 
 ## Requirements
@@ -21,13 +21,13 @@ for the frontend extension.
 Using conda:
 
 ```
-conda install -c conda-forge jupyterlab-snippets
+conda install -c conda-forge jupyterlab-sas-snippets
 ```
 
 Using pip:
 
 ```bash
-pip install jupyterlab-snippets
+pip install jupyterlab-sas-snippets
 ```
 
 Rebuild JupyterLab:
@@ -63,12 +63,6 @@ snippet. Directories can be used to organize the snippet files and will become s
 In JupyterLab, use the "Snippets" menu to select the snippet:
 
 <img width="570" alt="Schermafbeelding 2020-03-30 om 17 25 31" src="https://user-images.githubusercontent.com/46192475/77930697-8257fd00-72ab-11ea-8a77-36f45d6442d9.png">
-
-## Convert snippets from jupyter-boilerplate format
-
-See [jupyter-boilerplate-converter](jupyter-boilerplate-converter/README.md) on how to convert snippets from the
-[jupyter-boilerplate](https://github.com/moble/jupyter_boilerplate) classic notebook extension (not available for
-JupyterLab) to jupyterlab-snippets.
 
 ## Troubleshoot
 
@@ -108,7 +102,7 @@ The `jlpm` command is JupyterLab's pinned version of
 pip install -e .
 
 # Register the server extension
-jupyter serverextension enable --py jupyterlab-snippets
+jupyter serverextension enable --py jupyterlab-sas-snippets
 
 # Install the dependencies
 jlpm
@@ -139,6 +133,6 @@ jupyter lab --watch
 ### Uninstall
 
 ```bash
-pip uninstall jupyterlab-snippets
-jupyter labextension uninstall jupyterlab-snippets
+pip uninstall jupyterlab-sas-snippets
+jupyter labextension uninstall jupyterlab-sas-snippets
 ```

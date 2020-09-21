@@ -12,7 +12,7 @@ import setuptools
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 # The name of the project
-name="jupyterlab-snippets"
+name="jupyterlab-sas-snippets"
 
 # Ensure a valid python version
 ensure_python(">=3.6")
@@ -24,7 +24,7 @@ lab_path = os.path.join(HERE, name, "labextension")
 
 # Representative files that should exist after a successful build
 jstargets = [
-    os.path.join(HERE, "lib", "snippets.js"),
+    os.path.join(HERE, "lib", "sas-snippets.js"),
 ]
 
 package_data_spec = {
@@ -55,21 +55,22 @@ with open("README.md", "r") as fh:
 setup_args = dict(
     name=name,
     version=version,
-    url="https://github.com/QuantStack/jupyterlab-snippets",
+    url="https://github.com/jld23/jupyterlab-snippets",
     author="QuantStack",
-    description="Code Snippets Extension for JupyterLab",
+    description="SAS Code Snippets Extension for JupyterLab",
     long_description=long_description,
     long_description_content_type="text/markdown",
     cmdclass=cmdclass,
     packages=setuptools.find_packages(),
     install_requires=[
         "jupyterlab",
+        "sas_kernel"
     ],
     zip_safe=False,
     include_package_data=True,
     license="BSD-3-Clause",
     platforms="Linux, Mac OS X, Windows",
-    keywords=["Jupyter", "JupyterLab"],
+    keywords=["Jupyter", "JupyterLab", "SAS"],
     classifiers=[
         "License :: OSI Approved :: BSD License",
         "Programming Language :: Python",
@@ -77,6 +78,8 @@ setup_args = dict(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: SAS :: 9.4",
+        "Programming Language :: SAS :: Viya",
         "Framework :: Jupyter",
     ],
 )
