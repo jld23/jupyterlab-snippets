@@ -19,7 +19,7 @@ import {
   folderIcon,
 } from '@jupyterlab/ui-components';
 
-import { listSnippets, Snippet, fetchSnippet } from "./snippets";
+import { listSnippets, Snippet, fetchSnippet } from "./sas-snippets";
 
 /**
  * The command IDs used by the snippets plugin.
@@ -80,7 +80,7 @@ function createMenu(commands: CommandRegistry , tree: Tree, path: string[] = [])
  * Initialization data for the jupyterlab-snippets extension.
  */
 const extension: JupyterFrontEndPlugin<void> = {
-  id: "jupyterlab-snippets",
+  id: "jupyterlab-sas-snippets",
   autoStart: true,
   optional: [IMainMenu, INotebookTracker],
   activate: async (
